@@ -49,7 +49,7 @@ class T411(Indexer):
                 payload = {'username' : self.c.username,
                            'password' : self.c.password }
 
-            response = requests.post(self._getUrl('/auth'), data=payload)
+            response = requests.post(self._getUrl('/auth'), data=payload, verify=False)
             data = response.json()
             if 'error' in data:
                 self._apiToken = ''
