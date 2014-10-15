@@ -25,7 +25,7 @@ from xdm import helper
 
 class T411(Indexer):
     version = "0.111"
-    identifier = "fr.torf.t411"
+    identifier = "fr.klick.t411"
     _config = {'username': '',
                'password':'',
                'enabled': True,
