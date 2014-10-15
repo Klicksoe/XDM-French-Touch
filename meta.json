@@ -5,7 +5,7 @@
         "fr.klick.t411": [
             {
                 "major_version": 1,
-                "minor_version": 00,
+                "minor_version": 0,
                 "format": "zip",
                 "desc": "T411.me torrent indexer",
                 "name": "T411",
