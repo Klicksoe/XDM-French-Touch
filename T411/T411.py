@@ -124,10 +124,10 @@ class T411(Indexer):
             d.size = int(item['size'])
             d.external_id = item['id']
             d.type = 'de.lad1337.torrent'
-            #d.extra_data['headers'] = { 'Authorization' : webResult[2] }
-            #d.extra_data['stats'] = { 'seeders' : item['seeders'],
-            #                             'leechers' : item['leechers'],
-            #                             'completed' : item['times_completed'] }
+            d.extra_data['headers'] = { 'Authorization' : webResult[2] }
+            d.extra_data['stats'] = { 'seeders' : item['seeders'],
+                                         'leechers' : item['leechers'],
+                                         'completed' : item['times_completed'] }
             downloads.append(d)
 
     def _getUrlFromId(self, torrentId):
