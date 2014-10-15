@@ -24,7 +24,7 @@ import requests
 from xdm import helper
 
 class T411(Indexer):
-    version = "0.111"
+    version = "0.112"
     identifier = "fr.klick.t411"
     _config = {'username': '',
                'password':'',
